@@ -41,5 +41,6 @@
 # other
 .gitignore
 build/
+*.info
 
 
