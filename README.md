@@ -1,6 +1,10 @@
 # mbds-grails-22-23-MN
 
-## Sujet
+## installation
+
+Si le projet ne s'exécute pas correctement, faite un clean du projet, build et relancer l'application.
+
+# Sujet
 
 ### Contexte 
 
