@@ -34,3 +34,12 @@
 
 # intellj
 .idea
+
+# class
+*.class
+
+# other
+.gitignore
+/build/*
+
+
