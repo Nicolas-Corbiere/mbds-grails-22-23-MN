@@ -1,0 +1,200 @@
+h1{
+    margin-left: 20px;
+    color :#fc6c15;
+}
+.logout:hover img{
+    filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+.icon-logout{
+    width: 20px;
+    heigth:20px;
+    margin-right: 5px ;
+}
+
+.logout{
+    float: right;
+    margin-right: 30px;
+    margin-top:20px;
+    margin-left: 20px;
+    width: 100px;
+    color: #fc6c15;
+    border:solid;
+    border-color: #fc6c15;
+    border-radius: 5px;
+    background-color: white;
+    font-size: large;
+}
+
+.logout a{
+    color: #fc6c15;
+    font-weight:normal;
+}
+.logout:hover a{
+    color: white;
+}
+
+.logout:hover {
+    background-color: #fc6c15;
+    color: white;
+}
+
+.edition-user, .create-user{
+    display: flex;
+    flex-direction: column;
+}
+.form-user-to-update{
+    width:40%;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow:0 0 5px hsla(0,0%,0%,.4);
+}
+
+
+.form{
+    width:95%;
+}
+.form-user-to-update h2{
+    color: #ee894a;
+    text-align: center;
+}
+
+fieldset{
+    border: none;
+}
+.create-user,.edit-user,.create-annonce{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #ee894a;
+    box-shadow:0 0 5px hsla(0,0%,0%,.4);
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 28px;
+    height: 60px;
+    border: unset;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+.edit-user,.create-annonce{
+    background-color: #e09060;
+}
+.create-user a,.edit-user a,.create-annonce a{
+    color: #fff;
+    font-weight: 600;
+}
+.create-annonce{
+    width: 50%;
+    margin-left: 50%;
+}
+input[type="submit"]{
+    background-color: #ee894a;
+    box-shadow:0 0 5px hsla(0,0%,0%,.4);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    box-shadow: none;
+}
+
+input{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 28px;
+    height: 60px;
+    border: unset;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(60, 66, 87, 0.16) 0px 0px 0px 1px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ee894a;
+}
+.user-annonce{
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+}
+.user-annonce li{
+    display: flex;
+    flex-flow: row;
+    align-items: baseline;
+}
+
+.formulaire-user{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.errors{
+    padding: 0;
+    width: 20%;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    color: red;
+}
+.errors li{
+    margin-top: 10px;
+}
+.title-annonce{
+    color: #1b6d85;
+    width: -webkit-fill-available;
+}
+.edit-user{
+    margin-left: 20px;
+}
+select{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 28px;
+    width: 100%;
+    height: 60px;
+    border: unset;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(60, 66, 87, 0.16) 0px 0px 0px 1px;
+}
+@media only screen and (min-width:320px) and (max-width: 980px) {
+    h1{
+        font-size:25px ;
+    }
+    .form-user-to-update {
+        width: 85%;
+    }
+    .form-user-to-update h2{
+        font-size: 20px;
+    }
+
+    .form p {
+        display: flex;
+        flex-flow: column;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input{
+        width: 85%;
+    }
+    textarea{
+        width: 80%;
+    }
+    input[type="submit"] {
+        margin-left: 5%;
+    }
+    .illu-annonce img{
+        width: 100px;
+        height: 100px;
+    }
+}

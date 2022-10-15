@@ -1,0 +1,159 @@
+
+.gif-coincoin{
+    width: 100%;
+    height: 100%;
+}
+body, html {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #fafafa;
+}
+.navbar-header{
+    width 200px;
+    height: 80px;
+}
+.navbar-brand img{
+    height:100%;
+}
+.navbar-header{
+    margin:fill;
+}
+.navbar{
+    border-bottom:solid;
+    border-bottom-color: #c4c4c4;
+    box-shadow:0 0 5px hsla(0,0%,0%,.4);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    align-items: baseline;
+}
+
+ul{
+    display:flex;
+    flex-direction: row;
+    justify-items: baseline;
+    list-style: none;
+}
+li{
+    margin-left: 10px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.img-navbar{
+    height: 30px;
+    width: 30px;
+}
+.navperso a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:black;
+}
+
+
+.navNewAnnonce a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fc6c15;
+    color:white;
+    border-radius: 5px;
+}
+.navNewAnnonce img,p{
+    margin-left:5px;
+    margin-right:5px;
+}
+.navSearch img,p{
+    margin-left:5px;
+    margin-right:5px;
+}
+.navSearch a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:black;
+
+}
+.navSearch:hover{
+    border-bottom: solid;
+    border-bottom-color:  #fc6c15;
+
+}
+.navbarAnnonce,.navbarperso{
+    display: flex;
+    flex-direction: row;
+
+}
+.navbarAnnonce{
+    align-items: baseline;
+}
+.navbarperso{
+    position: absolute;
+    right:20px;
+}
+.containerCategory{
+    margin-top: 20px;
+}
+.navbarCategory a{
+    color: black;
+}
+
+.navbarCategory li:hover{
+    border-bottom: solid;
+    border-bottom-color:  black;
+}
+
+.navbarCategory ul{
+    padding-left: 0;
+}
+
+.navbarCategory li{
+    display: flex;
+    flex-direction: row;
+    justify-items: baseline;
+    list-style: none;
+}
+.navperso p,.navSearch p{
+    margin-top: 0;
+}
+.point{
+    margin-left: 5px;
+}
+
+@media only screen and (min-width:320px) and (max-width: 980px){
+
+    .container{
+        display: flex;
+        flex-flow: column;
+    }
+    .navbar{
+        height:120px;
+        width: 100%;
+    }
+   .navbar-header{
+       height: 50px;
+   }
+
+   .navbar-collapse ul{
+       padding: 0;
+   }
+   .navbarAnnonce{
+       width: 10%;
+   }
+
+    .navbarCategory{
+        display: none;
+    }
+    .navperso p,.navSearch p, .navbarAnnonce p {
+        display: none;
+    }
+}

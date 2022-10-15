@@ -1,0 +1,100 @@
+h1{
+    color:#fc6c15;
+}
+.showillustration{
+    display: flex;
+    flex-direction: column;
+}
+.detail-illustraion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.illustration{
+    width:100%;
+}
+img{
+    width: 100%;
+    height:100% ;
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+}
+.login p{
+    font-style: italic;
+}
+
+
+.buttons{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    background-color: white;
+    width: fit-content;
+    border: 1px solid white;
+    box-shadow:0 0 5px hsla(0,0%,0%,.4);
+    align-items: baseline;
+}
+.logout{
+    margin-top:20px;
+    margin-left: 20px;
+}
+
+.edit-button,.delete,.logout{
+    margin-top:20px;
+    margin-left: 20px;
+    width: 100px;
+    color: #fc6c15;
+    border:solid;
+    border-color: #fc6c15;
+    border-radius: 5px;
+    background-color: white;
+    font-size: large;
+}
+.edit-button p{
+    margin-left: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.logout{
+    font-weight: normal;
+}
+.logout:hover a,.edit-button:hover a{
+    color: white;
+}
+
+.edit-button:hover,.delete:hover,.logout:hover {
+    background-color: #fc6c15;
+    color: white;
+}
+
+.logout:hover img{
+    filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+.icon-logout{
+    width: 20px;
+    heigth:20px;
+    margin-right: 5px ;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 980px) {
+    .detail-illustraion{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .buttons {
+        padding: 0;
+        margin: 0;
+    }
+    .edit-button,.delete,.logout{
+        margin-left: 15px;
+    }
+    .logout{
+        margin-right: 15px;
+    }
+}

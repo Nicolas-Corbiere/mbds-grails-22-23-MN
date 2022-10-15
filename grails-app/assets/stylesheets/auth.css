@@ -1,0 +1,97 @@
+    #login {
+        margin: 15px 0px;
+        padding: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #login .inner {
+        text-align: left;
+        width:40%;
+        background-color: white;
+        border: 1px solid white;
+        box-shadow:0 0 5px hsla(0,0%,0%,.4);
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #login .inner .fheader {
+        background-color: white;
+        color: #ee894a;
+        text-align: center;
+        font-weight: bold;
+    }
+    .fheader{
+        font-size: 30px;
+    }
+
+    .create-account{
+        font-size: 14px;
+        text-align: center;
+    }
+    input {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 28px;
+        width: 50%;
+        height: 60px;
+        border: unset;
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(60, 66, 87, 0.16) 0px 0px 0px 1px;
+    }
+    input[type="submit"] {
+        background-color: #ee894a;
+        box-shadow:0 0 5px hsla(0,0%,0%,.4);
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        margin-left: 25%;
+    }
+    input[type="checkbox"] {
+        box-shadow: none;
+    }
+    label {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        color: #ee894a;
+    }
+    @media only screen and (min-width:320px) and (max-width: 980px){
+        #login .inner {
+            width:85%;
+        }
+       .fheader{
+           font-size: 20px;
+       }
+        #remember_me_holder {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+        }
+        #remember_me_holder input{
+            margin-left: 0;
+        }
+       form p{
+           display: flex;
+           flex-flow: column;
+       }
+
+       label{
+           font-size: 15px;
+       }
+       input{
+           margin-left: 5%;
+           width: 90%;
+       }
+        input[type="submit"] {
+
+            margin-left: 5%;
+        }
+    }

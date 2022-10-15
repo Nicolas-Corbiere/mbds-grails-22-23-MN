@@ -1,0 +1,155 @@
+h1{
+    margin-left: 20px;
+    color :#fc6c15;
+}
+.logout:hover img{
+    filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+.icon-logout{
+    width: 20px;
+    heigth:20px;
+    margin-right: 5px ;
+}
+
+.logout{
+    float: right;
+    margin-right: 30px;
+    margin-top:20px;
+    margin-left: 20px;
+    width: 100px;
+    color: #fc6c15;
+    border:solid;
+    border-color: #fc6c15;
+    border-radius: 5px;
+    background-color: white;
+    font-size: large;
+}
+
+.logout a{
+    color: #fc6c15;
+    font-weight:normal;
+}
+.logout:hover a{
+    color: white;
+}
+
+.logout:hover {
+    background-color: #fc6c15;
+    color: white;
+}
+
+.creation-annonce{
+    display: flex;
+    flex-direction: column;
+
+}
+form{
+    width:40%;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow:0 0 5px hsla(0,0%,0%,.4);
+}
+form h2{
+    color: #ee894a;
+    text-align: center;
+}
+fieldset{
+    border: none;
+}
+
+input[type="submit"] {
+     background-color: #ee894a;
+     box-shadow:0 0 5px hsla(0,0%,0%,.4);
+     color: #fff;
+     font-weight: 600;
+     cursor: pointer;
+ }
+input[type="checkbox"] {
+    box-shadow: none;
+}
+input[type="file"] {
+    box-shadow: none;
+
+}
+input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 28px;
+    width: 100%;
+    height: 60px;
+    border: unset;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(60, 66, 87, 0.16) 0px 0px 0px 1px;
+}
+label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ee894a;
+}
+.author-annonce{
+    display: none;
+}
+
+.formulaire-annonce{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.errors{
+    padding: 0;
+    width: 20%;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    color: red;
+}
+
+select{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 28px;
+    width: 100%;
+    height: 60px;
+    border: unset;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(60, 66, 87, 0.16) 0px 0px 0px 1px;
+}
+.errors li{
+    margin-top: 10px;
+}
+
+@media only screen and (min-width:320px) and (max-width: 980px) {
+    h1{
+        font-size:25px ;
+    }
+    form {
+        width: 85%;
+    }
+
+    form h2 {
+        font-size: 20px;
+    }
+    .form p {
+        display: flex;
+        flex-flow: column;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    input[type="submit"] {
+
+        margin-left: 5%;
+    }
+}

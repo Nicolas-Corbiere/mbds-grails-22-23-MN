@@ -1,0 +1,252 @@
+.navbar-brand img{
+    width: 100%;
+}
+.header-list-user{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.create-user{
+    margin-left: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fc6c15;
+    border-radius: 5px;
+    width: 20%;
+    height: 30px;
+}
+.create-user a{
+    color:white;
+}
+#list-user{
+    display: flex;
+    flex-flow: row wrap;
+}
+.item-c-content{
+    width: 900px;
+    height: 320px;
+    margin:20px;
+    border:solid;
+    border-color: #c4c4c4 ;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+.mdp,.user-activite{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    margin-left: 20px;
+}
+.user-annonce{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    margin-left:40px;
+}
+.user-activite p{
+    margin: 0;
+    padding: 0;
+}
+.title-annonce{
+    margin-left: 20px;
+}
+.user-activite img{
+    margin-left: 10px;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+h1{
+    margin-left: 20px;
+    color :#fc6c15;
+}
+h2{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #414040;
+    align-items: baseline;
+}
+h2:hover{
+    color : #ee894a;
+}
+h3{
+    color : #ee894a;
+}
+
+.logout:hover img{
+    filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    background-color: white;
+    width: fit-content;
+    border: 1px solid white;
+    box-shadow:0 0 5px hsla(0,0%,0%,.4);
+    align-items: baseline;
+    margin-left: 20px;
+}
+.logout{
+    margin-top:20px;
+    margin-left: 20px;
+}
+
+.edit-button,.delete,.logout{
+    margin-top:20px;
+    margin-left: 20px;
+    width: 100px;
+    color: #fc6c15;
+    border:solid;
+    border-color: #fc6c15;
+    border-radius: 5px;
+    background-color: white;
+    font-size: large;
+}
+.edit-button p{
+    margin-left: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.logout{
+    font-weight: normal;
+}
+.logout:hover a,.edit-button:hover a{
+    color: white;
+}
+
+.edit-button:hover,.delete:hover,.logout:hover {
+    background-color: #fc6c15;
+    color: white;
+}
+.logout img{
+    margin:0;
+    width: 20px;
+    height: 20px;
+}
+.pagination{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.step {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+.step:hover{
+    color:#fc6c15;
+}
+.nextLink {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition: background-color .3s;
+    background-color: #ee894a;
+}
+
+.prevLink {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition: background-color .3s;
+    background-color: #ee894a;
+}
+
+.currentStep {
+    padding: 10px;
+    color: #ee894a;
+
+}
+
+.step.gap {
+    display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 980px) {
+    h1{
+        font-size:25px ;
+    }
+    h3{
+        font-size: 15px;
+    }
+
+    #list-user{
+        display: flex;
+        flex-direction: column ;
+    }
+
+    .item-c-content{
+        width: 85%;
+    }
+   .item-c-content h2{
+       font-size: 20px;
+   }
+    .mdp,.user-activite{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .user-annonce{
+        display: flex;
+        flex-flow: column wrap;
+
+    }
+    .mdp p{
+        font-size: 8px;
+    }
+    .mdp, .user-activite,.user-annonce{
+        font-size: 15px;
+    }
+    .user-activite img{
+        margin-left: 20px;
+    }
+
+
+    .create-user{
+        width:30%;
+        height: 20%;
+    }
+    .create-user a{
+        margin-left: 20%;
+    }
+
+    form{
+        width: 85%;
+    }
+    .buttons{
+        padding: 0;
+        margin:0;
+    }
+    .pagination{
+        font-size: 15px;
+    }
+
+    .step {
+        padding: 5px;
+    }
+    .step:hover{
+        color:#fc6c15;
+    }
+    .nextLink {
+        padding: 10px;
+    }
+
+    .prevLink {
+        padding: 10px;
+    }
+
+    .currentStep {
+        padding: 5px;
+    }
+
+}

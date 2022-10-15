@@ -1,0 +1,150 @@
+.show-annonce{
+    display: flex;
+    flex-direction: column;
+}
+.detail-annonce{
+    display: flex;
+    flex-direction: row wrap;
+}
+.cadre_diapo{box-sizing:border-box}
+h1,h3,h4{
+    color: #fc6c15;
+}
+.active-price{
+    float: right;
+    margin-right: 20px;
+    color:#ee894a;
+    font-size: large;
+
+}
+img{
+    width: 100%;
+    height:100% ;
+}
+/*pour le saut de page, on cree une class que l'on met en display:none*/
+.target{
+    display: none
+}
+/* englobe le slider */
+
+.cadre_diapo{
+    max-width: 600px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.interieur_diapo {
+    display: flex;
+    transition: transform .6s ease-in-out
+}
+.interieur_diapo img{
+    background-color: white;
+    border: 1px solid white;
+    box-shadow:0 0 5px hsla(0,0%,0%,.4);
+}
+/*navigation avec images miniatures*/
+.navigation_diapo{
+    display: flex; /*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0
+}
+
+.navigation_diapo li {
+    margin-left: 0;
+    padding-right: 5px;
+    width: 600px;
+}
+
+.navigation_diapo img{
+    background-color: white;
+    border: 1px solid white;
+    box-shadow:0 0 5px hsla(0,0%,0%,.4);
+    width: 100%;
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+}
+.login p{
+    font-style: italic;
+}
+@media (min-width:31.25rem){
+    .description span{
+        font-size: initial
+    }
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    background-color: white;
+    width: fit-content;
+    border: 1px solid white;
+    box-shadow:0 0 5px hsla(0,0%,0%,.4);
+    align-items: baseline;
+}
+.logout{
+    margin-top:20px;
+    margin-left: 20px;
+}
+
+.edit-button,.delete,.logout{
+    margin-top:20px;
+    margin-left: 20px;
+    width: 100px;
+    color: #fc6c15;
+    border:solid;
+    border-color: #fc6c15;
+    border-radius: 5px;
+    background-color: white;
+    font-size: large;
+}
+.edit-button p{
+    margin-left: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.logout{
+    font-weight: normal;
+}
+
+.logout:hover a,.edit-button:hover a{
+    color: white;
+}
+
+.edit-button:hover,.delete:hover,.logout:hover {
+    background-color: #fc6c15;
+    color: white;
+}
+
+.logout:hover img{
+    filter: opacity(0.4) drop-shadow(0 0 0 red);
+}
+.icon-logout{
+    width: 20px;
+    heigth:20px;
+    margin-right: 5px ;
+}
+@media only screen and (min-width:320px) and (max-width: 980px){
+    .detail-annonce{
+        display: flex;
+        flex-direction: column ;
+    }
+
+    .buttons {
+        padding: 0;
+        margin: 0;
+    }
+    .edit-button,.delete,.logout{
+        margin-left: 15px;
+    }
+    .logout{
+        margin-right: 15px;
+    }
+}

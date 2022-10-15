@@ -1,0 +1,1196 @@
+{
+	"info": {
+		"_postman_id": "4c35c714-fdd6-414b-ab9f-5fdcca2d9dd5",
+		"name": "Authentificated",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23599275"
+	},
+	"item": [
+		{
+			"name": "Annonce",
+			"item": [
+				{
+					"name": "Annonce Get Succes Json",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/annonce/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Annonce Get Succes XML",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/annonce/?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Annonce Get Fail",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "Test",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/annonce/?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Annonce put Succes",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"This is my annonce 1\",\r\n    \"description\":\"My description\",\r\n    \"price\":50.5,\r\n    \"active\":true,\r\n    \"category\":\"Immobilier\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/annonce/?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Annonce put Params missing",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"This is my annonce 1\",\r\n    \"description\":\"My description\",\r\n    \"active\":true,\r\n    \"category\":\"Immobilier\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/annonce/?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Annonce patch Succes",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"This is my annonce 1\",\r\n    \"description\":\"My description\",\r\n    \"category\":\"Immobilier\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/annonce/?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Annonce patch No Params",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/annonce/?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Annonce delete Succes",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/annonce/?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Annonce check the delete",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/annonce/?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Annonce delete Unauthorized",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/annonce/?id=7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Annonce put Unauthorized",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"title\":\"This is my annonce 2\",\r\n    \"description\":\"My description\",\r\n    \"price\":700,\r\n    \"active\":true,\r\n    \"category\":\"Immobilier\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/annonce/?id=9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Annonce patch Unauthorized",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"This is my annonce 9\",\r\n    \"description\":\"My description\",\r\n    \"category\":\"Immobilier\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/annonce/?id=9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Annonces",
+			"item": [
+				{
+					"name": "Annonces Get Success JSON",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/annonces/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonces",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Annonces Get Success XML",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "XmL",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/annonces/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonces",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Annonces POST Success",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"title1\",\r\n    \"description\":\"this is a description\",\r\n    \"price\":48.8,\r\n    \"active\":true,\r\n    \"category\":\"Multimedia\",\r\n    \"illustration\":\"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\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/annonces/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonces",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Annonces POST Success as ADMIN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"title1\",\r\n    \"description\":\"this is a description\",\r\n    \"price\":48.8,\r\n    \"active\":true,\r\n    \"category\":\"Multimedia\",\r\n    \"author\":3,\r\n    \"illustration\":\"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\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/annonces/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonces",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User Get Success JSON",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/user/?id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Get Success XML",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/user/?id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Get Success Fail",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "no",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/user/?id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Put Success if ADMIN",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"Alice1\",\r\n    \"password\":\"pass\",\r\n    \"role\":\"USER_MODERATEUR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/user/?id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Put Params missing",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"Alice1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/user/?id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User patch Succes",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"Alice2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/user/?id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User patch No params",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/user/?id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User delete Succes",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/user/?id=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User check delete",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/user/?id=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Users Get Success JSON",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users Get Success XML",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "XML",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users POST Client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"Nicolas\",\r\n    \"password\":\"pass\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users POST Client as Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"NicolasF\",\r\n    \"password\":\"pass\",\r\n    \"active\":false,\r\n    \"role\":\"ROLE_Client\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users POST Modo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"modo2\",\r\n    \"password\":\"modo2\",\r\n    \"role\":\"ROLE_MODERATEUR\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users POST Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"admin3\",\r\n    \"password\":\"admin2\",\r\n    \"role\":\"ROLE_ADMIN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login as admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login as modo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"modo\",\r\n    \"password\":\"modo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login as client 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"Alice\",\r\n    \"password\":\"pass\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL1RoTlJnVlNnRWtnZFlBRTI1RWgwek1SbjFjb05xR2tXa0VBWCsrRWVuT1wvTTNSbVNwY3BFaHd5cGFKRXFkZTNJZjlJdVwvUU5RTzNSbDd0cDNodURBZ25xVFwvZTduMzlmenhSVlVqSWJuc1daY0dEOFZXY3lsYjFMTlpXd3d6RFMzSFQ4enFDTzBPZUpGRG16U0JLNlBWd0l2Z0JLUExEd05EdGd4cXdvbTQrcG02d0JEVzJ0cldGSTZ2bUhjMXl6QkU2VVBcL1Z2dVVHbThJMUJRZTk5S01MSU5reXdNVlNadFhjbjFkc28xUnRzd1Vjd0NGUjY2MFZSSU55Z3RaOElNUTBkUXNwYkFLSUF4bHRsM2lsUTVHZ3ZqMTJZenkwVzFnYllXd09PVUdVUHU3aVZwV0dmZDNUdWJraEljd1hzb3QxT1BEblczNEtDKzRcL0ZYbFJDVW1pdHA1cHN5VVJIZjUwNmMrTHN6WnpcLzdYN3ZORWdCMXN2andOOFg4MlFwMHYrXC8rbmMyTDlrSUwwMFBXQzFpdG5aS2J5WUw1clVhbmZQbGw2OVA1MVllZFI2VHNFQnZcL3Y0XC81NVp2bU9xc3FTWmxtVmczdGlHaFB5dTZaeUZjZUpoOXNvZU0zZUpJS3BEOUtXb3h1SlFwaWlsdldTZ3o2dGpENlpqTlkzMXRlZVwvMnk3bDRyTEVxNEpOVW5lV2kzTFQ5UXRLdmVuNDhcLytuT1wvaU9FVlZJNlp5SkE2bnloQTlTeHBvVDY5T0o4WitcL3k3bHljWVwvTTNcL0FNaDBvOTRSQXdBQSIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjY1ODMxMTU5LCJpYXQiOjE2NjU4Mjc1NTl9.HXYY2zL7dK9n_KypNLDWg8mxBKr_gDZEg7r1LIcpAzI",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

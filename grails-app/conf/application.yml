@@ -2,7 +2,7 @@
 grails:
     profile: web
     codegen:
-        defaultPackage: mbds.grails
+        defaultPackage: com.mbds.grails
     gorm:
         reactor:
             # Whether to translate GORM events into Reactor events
@@ -106,7 +106,7 @@ environments:
             url: jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
     production:
         dataSource:
-            dbCreate: none
+            dbCreate: create-drop
             url: jdbc:h2:./prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
             properties:
                 jmxEnabled: true
@@ -126,3 +126,10 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+server:
+    port: 8081
+    
+illustrations:
+    basePath: C:/Users/nicol/Documents/MiageS9/Framework/projet/grails-lecoincoin-lahorde/grails-app/assets/images
+    #basePath: C:/Users/gregg/IdeaProjects/mbds-grails-22-23/grails-app/assets/images/
+    baseUrl: http://localhost:8081/assets/
